@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+    <link rel="stylesheet" href="css/style-pembuka.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-main">
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo">
+        </div>
+        <nav class="navbar-right">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#info-section">Informasi</a> <!-- Link Informasi ditambahkan di navbar -->
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <section class="carousel-section" id="home">
+        <div class="carousel">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel-images">
+                <img src="img/header1.jpg" alt="Gambar 1" class="active">
+                <img src="img/header2.jpg" alt="Gambar 2">
+                <img src="img/header3.jpg" alt="Gambar 3">
+                <img src="img/header4.jpg" alt="Gambar 4">
+            </div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Selamat Datang -->
+    <section class="welcome-section">
+        <div class="welcome-content">
+            <img src="img/welcome.jpg" alt="Welcome Image" class="welcome-image">
+            <h1>Selamat Datang di Website Diagnosa</h1>
+            <p>Temukan informasi terkait kesehatan mental dan mulailah perjalanan Anda untuk memahami diri lebih baik.</p>
+            <div class="button-container">
+                <a href="#about" class="btn">About Us</a>
+                <a href="penjelasan.html" class="btn">Mulai Test</a>
+                <a href="#info-section" class="btn">Informasi</a> <!-- Tombol Informasi -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Siapa Kami?</h3>
+                <p>Halo! Kami dari kelompok 5 kelas XII Soshum 3 dalam Projek Penguatan Profil Pelajar Pancasila (P5) dengan tema Rekayasa dan Teknologi. Dalam projek kali ini, kami fokus mengembangkan sebuah inovasi berupa website deteksi dini kesehatan mental. Melalui website ini, kami ingin menunjukkan bahwa teknologi bisa dimanfaatkan untuk hal-hal yang berguna bagi masyarakat. Harapan kami, website ini dapat menjadi langkah kecil menuju kesadaran akan pentingnya kesehatan mental.  
+
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="img/about.jpg" alt="About Us">
+            </div>
+        </div>
+    </section>
+
+    <!-- Penjelasan Gangguan Mental: Manik, Depresi, Bipolar -->
+    <section id="info-section" class="mental-disorders">
+        <div class="disorder-cards">
+            <div class="disorder-card">
+                <h3>Manik</h3>
+                <p>Gejala manik atau mania adalah kondisi psikologis yang dapat membuat seseorang mengalami euforia di luar batas. Episode manik adalah gejala umum dari gangguan bipolar.</p>
+            </div>
+            <div class="disorder-card">
+                <h3>Depresi</h3>
+                <p>Depresi adalah kondisi ketika seseorang merasa sedih, lelah, atau kehilangan semangat dalam waktu lama, hingga sulit menikmati hidup atau melakukan aktivitas sehari-hari. penyebabnya bisa karena tekanan hidup, masalah kesehatan, atau faktor biologis, tapi depresi bisa diatasi dengan dukungan dan perawatan yang tepat.</p>
+            </div>
+            <div class="disorder-card">
+                <h3>Bipolar</h3>
+                <p>Bipolar adalah gangguan mental di mana seseorang mengalami perubahan suasana hati yang ekstrem, dari perasaan sangat gembira dan energi tinggi (manik) hingga sangat sedih dan putus asa (depresi). Perubahan suasana hati ini bisa terjadi secara tiba-tiba dan seringkali berulang.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="js/next.js"></script>
+</html>
